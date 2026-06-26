@@ -1,0 +1,112 @@
+:root {
+    --bg-color: #f4f7f6;
+    --card-bg: #ffffff;
+    --text-color: #333333;
+    --primary-color: #007bff;
+}
+
+body.dark-mode {
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --text-color: #ffffff;
+    --primary-color: #39ff14;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.theme-container {
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+
+.dashboard {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.subtitle {
+    color: #666;
+    font-style: italic;
+}
+
+body.dark-mode .subtitle {
+    color: #aaa;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+body.dark-mode .btn {
+    background-color: #fff;
+    color: #333;
+}
+
+.counter-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.btn-counter {
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+body.dark-mode .btn-counter {
+    color: black;
+}
+
+.counter-value {
+    font-size: 28px;
+    font-weight: bold;
+    min-width: 40px;
+}
