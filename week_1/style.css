@@ -1,0 +1,462 @@
+/* --- Global Reset & Variables --- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+
+/* Blueprint Requirement: Max Width 1200px */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* --- 1. Header Styling (Height: 80px) --- */
+
+.main-header {
+    height: 80px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo h2 span {
+    color: #007bff;
+    /* DecodeLabs Brand Color */
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #007bff;
+}
+
+
+/* --- 2. Hero Section (Padding: 120px 0) --- */
+
+.hero-section {
+    padding: 120px 0;
+    background-color: #f0f4f8;
+}
+
+.hero-flex {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.cta-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* --- 3. Content 12-Column Grid Section --- */
+
+.services-section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+    /* Blueprint Row Margin: 60px */
+    font-size: 32px;
+}
+
+
+/* Blueprint Specs: 12-Column Grid Layout with 24px Gutter */
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+    /* Gutter space: 24px */
+}
+
+
+/* Har card 4 columns cover karega (4 + 4 + 4 = 12) */
+
+.card {
+    grid-column: span 4;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #eef2f5;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.card p {
+    color: #666;
+    font-size: 15px;
+}
+
+
+/* --- 4. Footer Section (Height: 400px) --- */
+
+.main-footer {
+    height: 400px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding-top: 60px;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.footer-links h4 {
+    margin-bottom: 15px;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #333;
+    color: #aaa;
+    font-size: 14px;
+}
+
+
+/* --- Global Reset & Variables --- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+
+/* Blueprint Requirement: Max Width 1200px */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* --- 1. Header Styling (Height: 80px) --- */
+
+.main-header {
+    height: 80px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo h2 span {
+    color: #007bff;
+    /* DecodeLabs Brand Color */
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #007bff;
+}
+
+
+/* --- 2. Hero Section (Padding: 120px 0) --- */
+
+.hero-section {
+    padding: 120px 0;
+    background-color: #f0f4f8;
+}
+
+.hero-flex {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.cta-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* --- 3. Content 12-Column Grid Section --- */
+
+.services-section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+    /* Blueprint Row Margin: 60px */
+    font-size: 32px;
+}
+
+
+/* Blueprint Specs: 12-Column Grid Layout with 24px Gutter */
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+    /* Gutter space: 24px */
+}
+
+
+/* Har card 4 columns cover karega (4 + 4 + 4 = 12) */
+
+.card {
+    grid-column: span 4;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #eef2f5;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.card p {
+    color: #666;
+    font-size: 15px;
+}
+
+
+/* --- 4. Footer Section (Height: 400px) --- */
+
+.main-footer {
+    height: 400px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding-top: 60px;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.footer-links h4 {
+    margin-bottom: 15px;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #333;
+    color: #aaa;
+    font-size: 14px;
+}
